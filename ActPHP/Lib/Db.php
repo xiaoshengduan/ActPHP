@@ -81,7 +81,7 @@ class DB{
 		if(strpos($field, '.') === false){
 			return '`'.$field.'`';
 		}else{
-			$field_arr =  array_walk(function($k,$v){return '`'.$v.'`'});explode('.', $field);
+			$field_arr =  array_walk(function($k,$v){return '`'.$v.'`'},explode('.', $field));
 			return implode('.', $field_arr);
 		}
 
