@@ -12,13 +12,8 @@ class My extends Thread{
 	/*	$client = new ActClient("tcp://127.0.0.1:9000",'tcp');
 		$client->conn();*/
 		echo $this->i;
-		$c = file_get_contents("http://www.qq.com");
-		$c = file_get_contents("https://123.sogou.com/");
-		$c = file_get_contents("http://www.sohu.com/");
-		$c = file_get_contents("https://www.sina.com.cn/");
-		$c = file_get_contents("http://mini.eastday.com/jrdftt/?qid=sgmz");
-		$c = file_get_contents("https://www.taobao.com/");
-		$c = file_get_contents("http://www.qq.com");
+		$c = file_get_contents("http://127.0.0.1");
+		$c = file_get_contents("http://127.0.0.1/");
 		echo $this->i."--".strlen($c)."--\n";
 	}
 }
